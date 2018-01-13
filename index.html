@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
       
     <meta charset="utf-8">
@@ -9,7 +8,6 @@
     <meta name="author" content="">
 
     <title>Ada Blog</title>
-    <embed src="1.mp3" hidden="true" autostart="true" loop="true">
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -26,7 +24,7 @@
   </head>
 
   <body id="page-top">
-
+    
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">Start Bootstrap</span>
@@ -302,6 +300,8 @@
 
     </div>
 
+    <audio id="audio" src="1.mp3" style="opacity:0" preload="auto" controls loop hidden="true"/>  
+
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -311,7 +311,11 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
+    <script language="javascript">
 
+      var myAuto = document.getElementById('audio');  
+      myAuto.play(); 
+    </script>
   </body>
 
 </html>
